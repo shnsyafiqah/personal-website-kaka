@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #F0FD71;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: #9DB7BE;
+    color: #F0FD71;
+    box-shadow: 0 0 10px #9DB7BE;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #F0FD71;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(Images/header.jpg) no-repeat center center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: right;
+    margin: 40px 0px;
+    letter-spacing: 5px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid #F0FD71;
+    color: #F0FD71;
+    outline: none;
+    transition: .6s ease;
+    font-family: century;
+    align-items: right;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #F0FD71;
+    color: #737373;
+    box-shadow: 0 0 5px #F0FD71, 0 0 10px #F0FD71, 0 0 15px #F0FD71;
+    font-weight: bold;
+}
+
+/* About Section */
+#About{
+    display: flex;
+    background-color: #9DB7BE;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;   
+    box-sizing: border-box;
+    padding: 30px;
+}
+#About h1{
+    color: #EDECED;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+#pic{
+    display: flex;
+    background-color: #9DB7BE;
+}
+#pic img{
+    width: 600px;
+    height: 350px;
+    padding: 0px 13px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    color: #F0FD71;
+    margin-bottom: 20px;
+}
+#intro p{
+    color: white;
+}
+
+/* Experience Section */
+#Experience{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 70px;
+    background-color: black;
+}
+#Experience h1{
+    color: #9DB7BE;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.Experience{
+    display: flex;
+}
+.Experience img{
+    width: 400px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: -20px;
+    padding: 0px 30px;
+}
+.name{
+    padding: 10px;
+}
+.name h2{
+    font-size: 2rem;
+    color: #F0FD71;
+    text-shadow: 0 0 5px #9DB7BE, 0 0 10px #9DB7BE;
+}
+.name p{
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #737373;
+}
+
+/* Education Section */
+ #Education{
+     display: flex;
+     flex-direction: column;
+     background-color: #9DB7BE;
+ }
+ #Education h1{
+     margin: 50px;
+     color: #F0FD71;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ .columns{
+     display: grid;
+     grid-template-columns: auto auto;
+     padding-left: 50px;
+     margin: 40px;
+ }
+ .box{
+     height: 150px;
+     width: 500px;
+     background-color: white;
+     border-radius: 20px;
+     margin: 10px;
+     padding: 30px;
+ }
+ .box h2{
+     color: #737373;
+     font-size: 1.5rem;
+     font-family: Century;
+     font-style: italic;
+     margin-bottom: 26px;
+     text-align: center;
+ }
+ .box p{
+     color: #9DB7BE;
+     font-family: serif;
+     font-size: 1.1rem;
+     text-align: justify;
+     text-align: center;
+ }
+
+ /* Family Section */
+ #Family{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: black;
+}
+#Family h1{
+    color: #9DB7BE;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+}
+ video{
+   display: block;
+   margin: auto;
+   width: 600px;
+   height: 350px;
+   padding: 0px 13px;
+
+}
+#Family h2{
+    color: #F0FD71;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: century; 
+}
+table {
+    font-family: Century;
+    color: white;
+    border-collapse: separate;
+ }
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  td, th {
+    border: 1px solid #9DB7BE;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color:#9DB7BE;
+  }
+
+/*Gallery Section*/
+#gallery{
+    display: flex;
+    flex-direction: column;
+    background-color:  #9DB7BE;
+}
+
+#gallery h1{
+    margin: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: #F0FD71;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+
+}
+.img-gallery{
+    width: 80%;
+    margin: 40px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+}
+.img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(15, 14, 15, 0.644);
+}
+
+/* More */
+#More{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+#More h1{
+    margin: 60px;
+    text-align: center;
+    color: #9DB7BE;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 60%;
+}
+video{
+    display: block;
+    margin: auto;
+}
+.hai{
+    padding: 10px;
+}
+.hai p{
+    font-size: 1.2rem;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    margin: 50px;
+    color: white;
+}
